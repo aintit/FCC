@@ -1,0 +1,13 @@
+function chunk(arr, size) {
+  // Break it up.
+  arr2 = [];
+  for (i = 0; i < arr.length / size; i++) {
+    for (j = 0; j < size; j++) {
+      arr2[i][j] = arr[i * size + j];
+    }
+  }
+  return arr;
+}
+
+chunk(['a', 'b', 'c', 'd'], 2);
+

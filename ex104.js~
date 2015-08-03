@@ -1,0 +1,16 @@
+function destroyer() {
+  // Remove all the values
+  var arr = arguments[0];
+  var args = Array.slice(arguments);
+  args = args.slice(1);
+  function isEqual(value) {
+    return this === value;
+  }
+  arr = arr.filter(isEqual);
+  console.log(args);
+  console.log(arr);
+  return arr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+

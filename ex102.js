@@ -1,0 +1,18 @@
+function where(collection, source) {
+  var arr = [];
+  // What's in a name?
+  for (i = 0; i < collection.length; i++) {
+    for (j = 0; j < Object.keys(source).length; j++) {
+      var k = Object.keys(source)[j];
+      if (collection[i][k] != source[k]) {
+        break;
+      }
+      arr.push(collection[i]);
+    }
+  }  
+  console.log(arr);
+  return arr;
+}
+
+where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
+

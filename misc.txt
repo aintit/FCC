@@ -1,0 +1,2 @@
+ex# = [x] - 33
+num. of ex. left = 204 - [x]
