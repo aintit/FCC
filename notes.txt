@@ -1,0 +1,5 @@
+notes:
+
+if function is recursive and has a for loop,
+instead of for (i = 0; i < whatever; i++)
+it should be (var i = 0; i < whatever; i++)

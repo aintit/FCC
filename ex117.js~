@@ -1,0 +1,28 @@
+function sumPrimes(num) {
+
+  function isPrime(n) {
+    if (n === 2 || n === 3) {
+      return true;
+    }
+    console.log("function isprime(" + n + ")");
+    for (var i = 2; i < Math.sqrt(n)+1; i++) {
+    console.log(i);
+      if (n%i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  var sum = 0;
+  for (var i = 2; i <= num; i++) {
+    console.log("i is: " + i);
+    if (isPrime(i)) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+
+console.log(sumPrimes(10));
+
